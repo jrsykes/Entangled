@@ -7,9 +7,9 @@ Computer vision tool for detecting plant entanglement of float plane rudders
   
   <br>Alternativley, create a new conda environment and run the following three lines:
 
-  pip install 'git+https://github.com/facebookresearch/detectron2.git'
-  conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 -c pytorch
-  pip install Pillow numpy progress 
+  <br>pip install 'git+https://github.com/facebookresearch/detectron2.git'<br>
+  <br>conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 -c pytorch<br>
+  <br>pip install Pillow numpy progress <br>
 
 <h4>Step two:<h4>
   Clone this reposetory and add a directory containing your input images (e.g. 'Input_data') and and empty output directory (e.g. Entangle_Detect_Out) 
