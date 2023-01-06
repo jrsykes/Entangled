@@ -12,7 +12,7 @@ Computer vision tool for detecting plant entanglement of float plane rudders
   <br>pip install Pillow numpy progress
 
 <h4>Step two:<h4>
-  Clone this reposetory and add a directory containing your input images (e.g. 'Input_data') and and empty output directory (e.g. Entangle_Detect_Out) 
+  Clone this reposetory and add a directory inside containing your input images (e.g. 'Input_data') and and empty output directory (e.g. 'Entangle_Detect_Out') 
 
 <h4>Step three:<h4>
   Add the .pth files, which contain the respective Resnet18 weights and Faster R-CNN weights, to this directory. These are avalable upon request.
