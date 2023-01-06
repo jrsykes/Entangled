@@ -1,7 +1,7 @@
 # Entangled
 Computer vision tool for detecting plant entanglement of float plane rudders
 
-Step one:
+<h4>Step one:<h4>
   Set up conda enviroment with Entangled.yml file
   e.g. : conda env create -f Entangled.yml
 
