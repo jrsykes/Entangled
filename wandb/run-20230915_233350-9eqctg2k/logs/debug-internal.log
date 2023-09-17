@@ -1,0 +1,184 @@
+2023-09-15 23:33:50,635 INFO    StreamThr :2260430 [internal.py:wandb_internal():86] W&B internal server running at pid: 2260430, started at: 2023-09-15 23:33:50.634403
+2023-09-15 23:33:50,636 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: status
+2023-09-15 23:33:50,637 INFO    WriterThread:2260430 [datastore.py:open_for_write():85] open: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/run-9eqctg2k.wandb
+2023-09-15 23:33:50,641 DEBUG   SenderThread:2260430 [sender.py:send():369] send: header
+2023-09-15 23:33:50,655 DEBUG   SenderThread:2260430 [sender.py:send():369] send: run
+2023-09-15 23:33:51,061 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: check_version
+2023-09-15 23:33:51,087 INFO    SenderThread:2260430 [dir_watcher.py:__init__():211] watching files in: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files
+2023-09-15 23:33:51,087 INFO    SenderThread:2260430 [sender.py:_start_run_threads():1100] run started: 9eqctg2k with start time 1694817230.634487
+2023-09-15 23:33:51,088 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: summary_record
+2023-09-15 23:33:51,089 INFO    SenderThread:2260430 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-15 23:33:51,089 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: check_version
+2023-09-15 23:33:51,212 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: run_start
+2023-09-15 23:33:51,219 DEBUG   HandlerThread:2260430 [system_info.py:__init__():31] System info init
+2023-09-15 23:33:51,219 DEBUG   HandlerThread:2260430 [system_info.py:__init__():46] System info init done
+2023-09-15 23:33:51,220 INFO    HandlerThread:2260430 [system_monitor.py:start():181] Starting system monitor
+2023-09-15 23:33:51,220 INFO    SystemMonitor:2260430 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-15 23:33:51,220 INFO    HandlerThread:2260430 [system_monitor.py:probe():201] Collecting system info
+2023-09-15 23:33:51,220 INFO    SystemMonitor:2260430 [interfaces.py:start():190] Started cpu monitoring
+2023-09-15 23:33:51,221 INFO    SystemMonitor:2260430 [interfaces.py:start():190] Started disk monitoring
+2023-09-15 23:33:51,221 INFO    SystemMonitor:2260430 [interfaces.py:start():190] Started gpu monitoring
+2023-09-15 23:33:51,222 INFO    SystemMonitor:2260430 [interfaces.py:start():190] Started memory monitoring
+2023-09-15 23:33:51,222 INFO    SystemMonitor:2260430 [interfaces.py:start():190] Started network monitoring
+2023-09-15 23:33:51,272 DEBUG   HandlerThread:2260430 [system_info.py:probe():195] Probing system
+2023-09-15 23:33:51,274 DEBUG   HandlerThread:2260430 [system_info.py:_probe_git():180] Probing git
+2023-09-15 23:33:51,290 DEBUG   HandlerThread:2260430 [system_info.py:_probe_git():188] Probing git done
+2023-09-15 23:33:51,290 DEBUG   HandlerThread:2260430 [system_info.py:probe():240] Probing system done
+2023-09-15 23:33:51,290 DEBUG   HandlerThread:2260430 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-76-generic-x86_64-with-glibc2.35', 'python': '3.10.11', 'heartbeatAt': '2023-09-15T22:33:51.272256', 'startedAt': '2023-09-15T22:33:50.612254', 'docker': None, 'cuda': None, 'args': ('--model_name', 'Entangled18', '--project_name', 'Elodea', '--root', '/local/scratch/jrs596/dat/ElodeaProject', '--data_dir', 'FasterRCNN_output/Rudders_split', '--arch', 'resnet18', '--min_epochs', '10', '--batch_size', '32', '--patience', '20', '--weights', '/local/scratch/jrs596/dat/models/PlantNotPlant_SemiSup.pkl', '--save', 'both', '--entity', 'frankslab'), 'state': 'running', 'program': '/home/userfs/j/jrs596/scripts/Entangled/Torch_Custom_CNNs2.2.1.py', 'codePath': 'Torch_Custom_CNNs2.2.1.py', 'git': {'remote': 'git@github.com:jrsykes/Entangled.git', 'commit': 'dd36b1f71e53d67a140ff98d32b01aa90a307e46'}, 'email': 'jamie.sykes@york.ac.uk', 'root': '/home/userfs/j/jrs596/scripts/Entangled', 'host': 'csgpu5', 'username': 'jrs596', 'executable': '/local/scratch/jrs596/envs/torch3/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 4138.39975, 'min': 800.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 3700.0, 'min': 800.0, 'max': 4700.0}, {'current': 4367.074, 'min': 800.0, 'max': 4700.0}, {'current': 4367.168, 'min': 800.0, 'max': 4700.0}, {'current': 3700.0, 'min': 800.0, 'max': 4700.0}, {'current': 3700.0, 'min': 800.0, 'max': 4700.0}, {'current': 3700.0, 'min': 800.0, 'max': 4700.0}, {'current': 4367.043, 'min': 800.0, 'max': 4700.0}, {'current': 4367.262, 'min': 800.0, 'max': 4700.0}, {'current': 4350.339, 'min': 800.0, 'max': 4700.0}, {'current': 3700.0, 'min': 800.0, 'max': 4700.0}, {'current': 4367.294, 'min': 800.0, 'max': 4700.0}, {'current': 4358.971, 'min': 800.0, 'max': 4700.0}], 'disk': {'total': 427.3533935546875, 'used': 26.312255859375}, 'gpu': 'NVIDIA GeForce GTX 1080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}, {'name': 'Quadro P6000', 'memory_total': 25769803776}], 'memory': {'total': 31.279434204101562}}
+2023-09-15 23:33:51,290 INFO    HandlerThread:2260430 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-15 23:33:51,290 INFO    HandlerThread:2260430 [system_monitor.py:probe():214] Publishing system info
+2023-09-15 23:33:51,290 DEBUG   HandlerThread:2260430 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-09-15 23:33:51,292 DEBUG   HandlerThread:2260430 [system_info.py:_save_pip():67] Saving pip packages done
+2023-09-15 23:33:51,292 DEBUG   HandlerThread:2260430 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-09-15 23:33:52,090 INFO    Thread-12 :2260430 [dir_watcher.py:_on_file_created():272] file/dir created: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/requirements.txt
+2023-09-15 23:33:52,090 INFO    Thread-12 :2260430 [dir_watcher.py:_on_file_created():272] file/dir created: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/conda-environment.yaml
+2023-09-15 23:33:52,090 INFO    Thread-12 :2260430 [dir_watcher.py:_on_file_created():272] file/dir created: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/wandb-summary.json
+2023-09-15 23:33:53,623 DEBUG   HandlerThread:2260430 [system_info.py:_save_conda():86] Saving conda packages done
+2023-09-15 23:33:53,625 INFO    HandlerThread:2260430 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-15 23:33:53,626 DEBUG   SenderThread:2260430 [sender.py:send():369] send: files
+2023-09-15 23:33:53,627 INFO    SenderThread:2260430 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-09-15 23:33:53,635 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-15 23:33:53,635 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: stop_status
+2023-09-15 23:33:53,878 DEBUG   SenderThread:2260430 [sender.py:send():369] send: telemetry
+2023-09-15 23:33:53,879 DEBUG   SenderThread:2260430 [sender.py:send():369] send: telemetry
+2023-09-15 23:33:53,879 DEBUG   SenderThread:2260430 [sender.py:send():369] send: files
+2023-09-15 23:33:53,879 INFO    SenderThread:2260430 [sender.py:_save_file():1354] saving file * with policy live
+2023-09-15 23:33:54,163 INFO    wandb-upload_0:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/dl5qdll1-wandb-metadata.json
+2023-09-15 23:33:54,384 INFO    wandb-upload_1:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/bm0uyeag-config.yaml
+2023-09-15 23:33:54,386 INFO    wandb-upload_3:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/xo6lfpze-conda-environment.yaml
+2023-09-15 23:33:54,437 INFO    wandb-upload_2:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/da53gwd9-requirements.txt
+2023-09-15 23:33:54,487 INFO    wandb-upload_7:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/ty5qdzh0-Entangled_train.sh
+2023-09-15 23:33:54,622 INFO    wandb-upload_5:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/q32dq94z-Entangled.py
+2023-09-15 23:33:54,650 INFO    wandb-upload_9:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/b6p4ehvb-Torch_Custom_CNNs2.2.1.py
+2023-09-15 23:33:54,664 INFO    wandb-upload_6:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/iv5xoaj0-Entangled.yml
+2023-09-15 23:33:54,666 INFO    wandb-upload_4:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/quilt3lg-Detectron2_train.py
+2023-09-15 23:33:54,676 INFO    wandb-upload_8:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/8qp7qym6-README.md
+2023-09-15 23:33:54,710 INFO    wandb-upload_0:2260430 [upload_job.py:push():133] Uploaded file /tmp/tmp6aqhytk8wandb/t4q1kx6b-wandb-metadata.json
+2023-09-15 23:33:55,896 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: status_report
+2023-09-15 23:33:56,557 DEBUG   SenderThread:2260430 [sender.py:send():369] send: telemetry
+2023-09-15 23:33:56,591 DEBUG   SenderThread:2260430 [sender.py:send():369] send: telemetry
+2023-09-15 23:34:00,999 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: status_report
+2023-09-15 23:34:05,423 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-15 23:34:05,425 DEBUG   SenderThread:2260430 [sender.py:send():369] send: history
+2023-09-15 23:34:05,426 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: summary_record
+2023-09-15 23:34:05,428 INFO    SenderThread:2260430 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-15 23:34:06,115 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: status_report
+2023-09-15 23:34:06,185 DEBUG   SenderThread:2260430 [sender.py:send():369] send: exit
+2023-09-15 23:34:06,185 INFO    SenderThread:2260430 [sender.py:send_exit():574] handling exit code: 1
+2023-09-15 23:34:06,185 INFO    SenderThread:2260430 [sender.py:send_exit():576] handling runtime: 14
+2023-09-15 23:34:06,187 INFO    SenderThread:2260430 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-15 23:34:06,187 INFO    SenderThread:2260430 [sender.py:send_exit():582] send defer
+2023-09-15 23:34:06,187 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 23:34:06,187 INFO    HandlerThread:2260430 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-15 23:34:06,187 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: defer
+2023-09-15 23:34:06,187 INFO    SenderThread:2260430 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-09-15 23:34:06,187 INFO    SenderThread:2260430 [sender.py:transition_state():602] send defer: 1
+2023-09-15 23:34:06,188 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 23:34:06,188 INFO    HandlerThread:2260430 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-15 23:34:06,188 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: defer
+2023-09-15 23:34:06,188 INFO    SenderThread:2260430 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-09-15 23:34:06,188 INFO    SenderThread:2260430 [sender.py:transition_state():602] send defer: 2
+2023-09-15 23:34:06,188 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 23:34:06,188 INFO    HandlerThread:2260430 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-15 23:34:06,188 INFO    HandlerThread:2260430 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-15 23:34:06,188 DEBUG   SystemMonitor:2260430 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-15 23:34:06,188 INFO    HandlerThread:2260430 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-15 23:34:06,189 DEBUG   SystemMonitor:2260430 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-15 23:34:06,189 INFO    HandlerThread:2260430 [interfaces.py:finish():202] Joined disk monitor
+2023-09-15 23:34:06,189 DEBUG   SystemMonitor:2260430 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-15 23:34:06,380 INFO    HandlerThread:2260430 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-15 23:34:06,380 INFO    HandlerThread:2260430 [interfaces.py:finish():202] Joined memory monitor
+2023-09-15 23:34:06,380 INFO    HandlerThread:2260430 [interfaces.py:finish():202] Joined network monitor
+2023-09-15 23:34:06,381 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: defer
+2023-09-15 23:34:06,381 INFO    SenderThread:2260430 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-09-15 23:34:06,381 INFO    SenderThread:2260430 [sender.py:transition_state():602] send defer: 3
+2023-09-15 23:34:06,381 DEBUG   SenderThread:2260430 [sender.py:send():369] send: stats
+2023-09-15 23:34:06,381 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 23:34:06,381 INFO    HandlerThread:2260430 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-15 23:34:06,381 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: defer
+2023-09-15 23:34:06,382 INFO    SenderThread:2260430 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-09-15 23:34:06,382 INFO    SenderThread:2260430 [sender.py:transition_state():602] send defer: 4
+2023-09-15 23:34:06,382 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 23:34:06,382 INFO    HandlerThread:2260430 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-15 23:34:06,382 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: defer
+2023-09-15 23:34:06,382 INFO    SenderThread:2260430 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-09-15 23:34:06,382 INFO    SenderThread:2260430 [sender.py:transition_state():602] send defer: 5
+2023-09-15 23:34:06,382 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 23:34:06,382 INFO    HandlerThread:2260430 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-15 23:34:06,383 DEBUG   SenderThread:2260430 [sender.py:send():369] send: summary
+2023-09-15 23:34:06,384 INFO    SenderThread:2260430 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-15 23:34:06,384 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: defer
+2023-09-15 23:34:06,385 INFO    SenderThread:2260430 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-09-15 23:34:06,385 INFO    SenderThread:2260430 [sender.py:transition_state():602] send defer: 6
+2023-09-15 23:34:06,385 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 23:34:06,385 INFO    HandlerThread:2260430 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-15 23:34:06,385 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: defer
+2023-09-15 23:34:06,385 INFO    SenderThread:2260430 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-09-15 23:34:06,389 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: status_report
+2023-09-15 23:34:06,589 INFO    SenderThread:2260430 [sender.py:transition_state():602] send defer: 7
+2023-09-15 23:34:06,589 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 23:34:06,589 INFO    HandlerThread:2260430 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-15 23:34:06,589 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: defer
+2023-09-15 23:34:06,589 INFO    SenderThread:2260430 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-09-15 23:34:07,185 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-15 23:34:07,918 INFO    SenderThread:2260430 [sender.py:transition_state():602] send defer: 8
+2023-09-15 23:34:07,918 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: poll_exit
+2023-09-15 23:34:07,919 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 23:34:07,919 INFO    HandlerThread:2260430 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-15 23:34:07,919 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: defer
+2023-09-15 23:34:07,919 INFO    SenderThread:2260430 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-09-15 23:34:07,919 INFO    SenderThread:2260430 [job_builder.py:build():232] Attempting to build job artifact
+2023-09-15 23:34:07,920 INFO    SenderThread:2260430 [job_builder.py:build():256] is repo sourced job
+2023-09-15 23:34:07,923 INFO    SenderThread:2260430 [job_builder.py:build():297] adding wandb-job metadata file
+2023-09-15 23:34:07,939 INFO    SenderThread:2260430 [sender.py:transition_state():602] send defer: 9
+2023-09-15 23:34:07,940 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: defer
+2023-09-15 23:34:07,940 INFO    HandlerThread:2260430 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-15 23:34:07,940 DEBUG   SenderThread:2260430 [sender.py:send():369] send: artifact
+2023-09-15 23:34:08,188 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-15 23:34:08,939 INFO    wandb-upload_1:2260430 [upload_job.py:push():88] Skipped uploading /home/userfs/j/jrs596/.local/share/wandb/artifacts/staging/tmp2czyxyfq
+2023-09-15 23:34:09,250 INFO    wandb-upload_3:2260430 [upload_job.py:push():91] Uploaded file /home/userfs/j/jrs596/.local/share/wandb/artifacts/staging/tmpca0xo37x
+2023-09-15 23:34:10,396 INFO    SenderThread:2260430 [sender.py:send_artifact():1450] sent artifact job-git_github.com_jrsykes_Entangled.git_Torch_Custom_CNNs2.2.1.py - {'id': 'QXJ0aWZhY3Q6NTcwMTk5MDAz', 'digest': 'a382619299efd45fc6be0a2dfa6ef08d', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjk3OTkxMDI5', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTcwMTkzOTUz', 'versionIndex': 1}}, 'version': 'latest'}
+2023-09-15 23:34:10,396 DEBUG   SenderThread:2260430 [sender.py:send_request():396] send_request: defer
+2023-09-15 23:34:10,396 INFO    SenderThread:2260430 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-09-15 23:34:10,396 INFO    SenderThread:2260430 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-09-15 23:34:13,190 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:34:18,192 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:34:23,193 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:34:28,194 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:34:33,196 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:34:38,198 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:34:43,201 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:34:48,202 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:34:53,204 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:34:58,212 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:03,214 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:08,215 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:13,216 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:18,218 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:23,219 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:28,221 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:33,223 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:38,224 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:43,227 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:48,227 DEBUG   HandlerThread:2260430 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-15 23:35:51,759 WARNING StreamThr :2260430 [internal.py:is_dead():414] Internal process exiting, parent pid 2260172 disappeared
+2023-09-15 23:35:51,759 ERROR   StreamThr :2260430 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-09-15 23:35:52,206 INFO    WriterThread:2260430 [datastore.py:close():298] close: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/run-9eqctg2k.wandb
+2023-09-15 23:35:52,228 INFO    HandlerThread:2260430 [handler.py:finish():854] shutting down handler
+2023-09-15 23:43:25,867 INFO    SenderThread:2260430 [dir_watcher.py:finish():389] scan: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files
+2023-09-15 23:43:25,868 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/config.yaml config.yaml
+2023-09-15 23:43:25,868 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/wandb-summary.json wandb-summary.json
+2023-09-15 23:43:25,868 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/requirements.txt requirements.txt
+2023-09-15 23:43:25,868 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/conda-environment.yaml conda-environment.yaml
+2023-09-15 23:43:25,868 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/wandb-metadata.json wandb-metadata.json
+2023-09-15 23:43:25,868 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/Detectron2_train.py Detectron2_train.py
+2023-09-15 23:43:25,868 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/Entangled.py Entangled.py
+2023-09-15 23:43:25,868 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/Entangled.yml Entangled.yml
+2023-09-15 23:43:25,868 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/Entangled_train.sh Entangled_train.sh
+2023-09-15 23:43:25,868 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/README.md README.md
+2023-09-15 23:43:25,869 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/Torch_Custom_CNNs2.2.1.py Torch_Custom_CNNs2.2.1.py
+2023-09-15 23:43:25,869 INFO    SenderThread:2260430 [dir_watcher.py:finish():403] scan save: /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_233350-9eqctg2k/files/output.log output.log
+2023-09-15 23:43:25,869 INFO    SenderThread:2260430 [sender.py:transition_state():602] send defer: 10
+2023-09-15 23:43:25,869 INFO    SenderThread:2260430 [sender.py:finish():1526] shutting down sender
+2023-09-15 23:43:25,869 INFO    SenderThread:2260430 [file_pusher.py:finish():159] shutting down file pusher
+2023-09-15 23:43:25,869 INFO    SenderThread:2260430 [file_pusher.py:join():164] waiting for file pusher

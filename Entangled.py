@@ -12,7 +12,7 @@ import torch
 from torchvision import transforms
 from progress.bar import Bar
 import argparse
-
+import torchvision.transforms as transforms
 
 #add command line arguments
 parser = argparse.ArgumentParser()
@@ -49,10 +49,17 @@ FasterRCNN = DefaultPredictor(cfg)
 
 #%%Define the plant not plant filter
 def plant_notplant_filter(input_img, binary_classifier_model, img_dir, file_name):
-
+	#TODO: resize image to 224x224
+	# Define the transformation
+	# resize_transform = transforms.Resize((128, 128))  # Resize to 128x128 pixels
+	# Apply the transformation to the image
+	# input_img = resize_transform(input_img)
+	
+ 
 	outputs = binary_classifier_model(input_img)
 	_, preds = torch.max(outputs, 1) 
-		
+	
+  
 	# [0][1] = Entangled
 	# [0][0] = NotEntangled	
 	source = os.path.join(img_dir, file_name)

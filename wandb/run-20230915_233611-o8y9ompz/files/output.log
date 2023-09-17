@@ -1,0 +1,45 @@
+
+[34m[1mwandb[39m[22m: [33mWARNING[39m Saving files without folders. If you want to preserve sub directories pass base_path to wandb.save, i.e. wandb.save("/mnt/folder/file.h5", base_path="/mnt")
+Setting stuff up...
+##################################################
+Building model...
+resnet18 loaded
+##################################################
+Learning... |                                | 0/16
+Image input size:  224
+Image resize applied
+Initializing Datasets and Dataloaders...
+Epoch 0
+----------
+Patience: 20/20
+
+
+Learning... |############################### | 16/16
+Learning... |                                | 0/2
+train Loss: 13.4350 Acc: 0.5537
+train Precision: 0.3507 Recall: 0.5537 F1: 0.4146
+Learning... |#######################         | 2/2
+[?25hTraceback (most recent call last):
+  File "/home/userfs/j/jrs596/scripts/Entangled/CocoaReader/utils/training_loop.py", line 183, in train_model
+    torch.save(model_out.module, PATH + '.pth')
+  File "/local/scratch/jrs596/envs/torch3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'ResNet' object has no attribute 'module'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/userfs/j/jrs596/scripts/Entangled/Torch_Custom_CNNs2.2.1.py", line 144, in <module>
+    train()
+  File "/home/userfs/j/jrs596/scripts/Entangled/Torch_Custom_CNNs2.2.1.py", line 117, in train
+    trained_model, best_f1, best_f1_loss, best_train_f1, run_name, _, _ = train_model(args=args, model=model, optimizer=optimizer, device=device, dataloaders_dict=dataloaders_dict, criterion=criterion, patience=args.patience, initial_bias=initial_bias, input_size=None, batch_size=args.batch_size)
+  File "/home/userfs/j/jrs596/scripts/Entangled/CocoaReader/utils/training_loop.py", line 186, in train_model
+    torch.save(model_out, PATH + '.pth')
+  File "/local/scratch/jrs596/envs/torch3/lib/python3.10/site-packages/torch/serialization.py", line 440, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/local/scratch/jrs596/envs/torch3/lib/python3.10/site-packages/torch/serialization.py", line 315, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/local/scratch/jrs596/envs/torch3/lib/python3.10/site-packages/torch/serialization.py", line 288, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(str(name)))
+RuntimeError: Parent directory /local/scratch/jrs596/dat/ElodeaProject/dat/models does not exist.
+val Loss: 2.5439 Acc: 0.6182
+val Precision: 0.3822 Recall: 0.6182 F1: 0.4723
+Saving model and weights to: /local/scratch/jrs596/dat/ElodeaProject/dat/models/Entangled18.pth and /local/scratch/jrs596/dat/ElodeaProject/dat/models/Entangled18_weights.pth

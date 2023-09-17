@@ -1,0 +1,134 @@
+{
+    "os": "Linux-5.15.0-76-generic-x86_64-with-glibc2.35",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-09-15T22:48:18.126431",
+    "startedAt": "2023-09-15T22:48:17.458576",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_name",
+        "Entangled18",
+        "--project_name",
+        "Elodea",
+        "--root",
+        "/local/scratch/jrs596/dat/ElodeaProject",
+        "--data_dir",
+        "FasterRCNN_output/Rudders_split",
+        "--arch",
+        "resnet18",
+        "--min_epochs",
+        "10",
+        "--max_epochs",
+        "100",
+        "--batch_size",
+        "32",
+        "--patience",
+        "20",
+        "--weights",
+        "/local/scratch/jrs596/dat/models/PlantNotPlant_SemiSup.pkl",
+        "--save",
+        "both",
+        "--entity",
+        "frankslab"
+    ],
+    "state": "running",
+    "program": "/home/userfs/j/jrs596/scripts/Entangled/Torch_Custom_CNNs2.2.1.py",
+    "codePath": "Torch_Custom_CNNs2.2.1.py",
+    "git": {
+        "remote": "git@github.com:jrsykes/Entangled.git",
+        "commit": "dd36b1f71e53d67a140ff98d32b01aa90a307e46"
+    },
+    "email": "jamie.sykes@york.ac.uk",
+    "root": "/home/userfs/j/jrs596/scripts/Entangled",
+    "host": "csgpu5",
+    "username": "jrs596",
+    "executable": "/local/scratch/jrs596/envs/torch3/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3930.1910833333336,
+        "min": 800.0,
+        "max": 4700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3924.016,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3923.976,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3923.946,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3923.846,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3923.817,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3923.742,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3923.709,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3923.631,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4229.761,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3929.832,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3923.502,
+            "min": 800.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3918.347,
+            "min": 800.0,
+            "max": 4700.0
+        }
+    ],
+    "disk": {
+        "total": 427.3533935546875,
+        "used": 26.312358856201172
+    },
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "Quadro P6000",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 31.279434204101562
+    }
+}

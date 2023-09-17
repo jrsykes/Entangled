@@ -1,0 +1,20 @@
+2023-09-15 23:48:30,099 INFO    MainThread:2307608 [wandb_setup.py:_flush():76] Current SDK version is 0.15.4
+2023-09-15 23:48:30,099 INFO    MainThread:2307608 [wandb_setup.py:_flush():76] Configure stats pid to 2307608
+2023-09-15 23:48:30,099 INFO    MainThread:2307608 [wandb_setup.py:_flush():76] Loading settings from /home/userfs/j/jrs596/.config/wandb/settings
+2023-09-15 23:48:30,099 INFO    MainThread:2307608 [wandb_setup.py:_flush():76] Loading settings from /home/userfs/j/jrs596/scripts/Entangled/wandb/settings
+2023-09-15 23:48:30,099 INFO    MainThread:2307608 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-15 23:48:30,099 INFO    MainThread:2307608 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-15 23:48:30,099 INFO    MainThread:2307608 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'Torch_Custom_CNNs2.2.1.py', 'program': '/home/userfs/j/jrs596/scripts/Entangled/Torch_Custom_CNNs2.2.1.py'}
+2023-09-15 23:48:30,099 INFO    MainThread:2307608 [wandb_init.py:_log_setup():507] Logging user logs to /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_234830-7nddpo3u/logs/debug.log
+2023-09-15 23:48:30,099 INFO    MainThread:2307608 [wandb_init.py:_log_setup():508] Logging internal logs to /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230915_234830-7nddpo3u/logs/debug-internal.log
+2023-09-15 23:48:30,100 INFO    MainThread:2307608 [wandb_init.py:init():547] calling init triggers
+2023-09-15 23:48:30,100 INFO    MainThread:2307608 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-09-15 23:48:30,100 INFO    MainThread:2307608 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2023-09-15 23:58:06,018 INFO    MainThread:2307608 [wandb_run.py:_finish():1890] finishing run frankslab/Elodea/s94pi3kr
+2023-09-15 23:58:06,020 INFO    MainThread:2307608 [wandb_run.py:_atexit_cleanup():2124] got exitcode: 0
+2023-09-15 23:58:06,022 INFO    MainThread:2307608 [wandb_run.py:_restore():2107] restore
+2023-09-15 23:58:06,023 INFO    MainThread:2307608 [wandb_run.py:_restore():2113] restore done
+2023-09-15 23:58:12,309 INFO    MainThread:2307608 [wandb_run.py:_footer_history_summary_info():3467] rendering history
+2023-09-15 23:58:12,311 INFO    MainThread:2307608 [wandb_run.py:_footer_history_summary_info():3499] rendering summary
+2023-09-15 23:58:12,318 INFO    MainThread:2307608 [wandb_run.py:_footer_sync_info():3426] logging synced files

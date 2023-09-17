@@ -1,0 +1,34 @@
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_setup.py:_flush():76] Configure stats pid to 2522018
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_setup.py:_flush():76] Loading settings from /home/userfs/j/jrs596/.config/wandb/settings
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_setup.py:_flush():76] Loading settings from /home/userfs/j/jrs596/scripts/Entangled/wandb/settings
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'frankslab', 'project': 'Elodea', 'root_dir': '/home/userfs/j/jrs596/scripts/Entangled', 'run_id': 't00m2bvs', 'sweep_param_path': '/home/userfs/j/jrs596/scripts/Entangled/wandb/sweep-dvp0ulj3/config-t00m2bvs.yaml', 'sweep_id': 'dvp0ulj3'}
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'Torch_Custom_CNNs2.2.1.py', 'program': '/home/userfs/j/jrs596/scripts/Entangled/Torch_Custom_CNNs2.2.1.py'}
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_init.py:_log_setup():524] Logging user logs to /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230916_032630-t00m2bvs/logs/debug.log
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_init.py:_log_setup():525] Logging internal logs to /home/userfs/j/jrs596/scripts/Entangled/wandb/run-20230916_032630-t00m2bvs/logs/debug-internal.log
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_init.py:init():564] calling init triggers
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_init.py:init():571] wandb.init called with sweep_config: {'input_size': 224}
+config: {}
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_init.py:init():614] starting backend
+2023-09-16 03:26:30,314 INFO    Thread-24 :2522018 [wandb_init.py:init():618] setting up manager
+2023-09-16 03:26:30,324 INFO    Thread-24 :2522018 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-09-16 03:26:30,324 INFO    Thread-24 :2522018 [wandb_init.py:init():624] backend started and connected
+2023-09-16 03:26:30,348 INFO    Thread-24 :2522018 [wandb_run.py:_config_callback():1324] config_cb None None {'input_size': 224}
+2023-09-16 03:26:30,350 INFO    Thread-24 :2522018 [wandb_init.py:init():715] updated telemetry
+2023-09-16 03:26:30,515 INFO    Thread-24 :2522018 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2023-09-16 03:26:31,126 INFO    Thread-24 :2522018 [wandb_run.py:_on_init():2220] communicating current version
+2023-09-16 03:26:31,170 INFO    Thread-24 :2522018 [wandb_run.py:_on_init():2229] got version response 
+2023-09-16 03:26:31,170 INFO    Thread-24 :2522018 [wandb_init.py:init():799] starting run threads in backend
+2023-09-16 03:26:31,302 INFO    Thread-24 :2522018 [wandb_run.py:_console_start():2199] atexit reg
+2023-09-16 03:26:31,302 INFO    Thread-24 :2522018 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-09-16 03:26:31,302 INFO    Thread-24 :2522018 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-09-16 03:26:31,302 INFO    Thread-24 :2522018 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-09-16 03:26:31,303 INFO    Thread-24 :2522018 [wandb_init.py:init():840] run started, returning control to user process
+2023-09-16 03:37:40,982 INFO    Thread-24 :2522018 [wandb_run.py:_finish():1934] finishing run frankslab/Elodea/t00m2bvs
+2023-09-16 03:37:40,983 INFO    Thread-24 :2522018 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2023-09-16 03:37:40,983 INFO    Thread-24 :2522018 [wandb_run.py:_restore():2151] restore
+2023-09-16 03:37:40,983 INFO    Thread-24 :2522018 [wandb_run.py:_restore():2157] restore done
+2023-09-16 03:37:45,330 INFO    Thread-24 :2522018 [wandb_run.py:_footer_history_summary_info():3557] rendering history
+2023-09-16 03:37:45,331 INFO    Thread-24 :2522018 [wandb_run.py:_footer_history_summary_info():3589] rendering summary
+2023-09-16 03:37:45,337 INFO    Thread-24 :2522018 [wandb_run.py:_footer_sync_info():3516] logging synced files
