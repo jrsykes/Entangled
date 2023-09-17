@@ -1,1 +1,0 @@
-/home/userfs/j/jrs596/scripts/Entangled/Entangled_train.sh
