@@ -19,8 +19,6 @@ parser.add_argument('--project_name', type=str, default='test',
                         help='Name for wandb project')
 parser.add_argument('--run_name', type=str, default=None,
                         help='Name for wandb run')
-parser.add_argument('--sweep', action='store_true', default=False,
-                        help='Run Waits and Biases optimisation sweep')
 parser.add_argument('--sweep_id', type=str, default=None,
                         help='sweep if for weights and biases')
 parser.add_argument('--WANDB_MODE', type=str, default='online',
@@ -127,7 +125,7 @@ def train():
     return trained_model, best_f1, best_f1_loss, best_train_f1
 
 
-if args.sweep == True:
+if args.sweep_config != None:
     with open(args.sweep_config) as file:
         config = yaml.load(file, Loader=yaml.FullLoader)
         sweep_config = config['sweep_config']

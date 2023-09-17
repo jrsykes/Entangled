@@ -12,5 +12,4 @@ python '/home/userfs/j/jrs596/scripts/Entangled/Torch_Custom_CNNs2.2.1.py' \
         --batch_size 32 \
         --patience 20 \
         --weights '/local/scratch/jrs596/dat/models/PlantNotPlant_SemiSup.pkl' \
-        --sweep \
         --sweep_config '/home/userfs/j/jrs596/scripts/Entangled/sweep_config.yml'
