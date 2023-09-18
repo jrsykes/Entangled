@@ -99,13 +99,17 @@ def train():
     wandb.save(os.path.join(script_dir, '*'))
     
     data_dir, num_classes, initial_bias, _ = toolbox.setup(args)
-    device = torch.device("cuda:" + args.GPU)
+    
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     model = toolbox.build_model(num_classes=num_classes, arch=args.arch, config=None).to(device)
 
     if args.weights != None:
-        # Load the pretrained weights from a .pkl file
-        pretrained_weights = torch.load(args.weights)
+        if torch.cuda.is_available():
+            # Load the pretrained weights from a .pkl file
+            pretrained_weights = torch.load(args.weights) 
+        else:
+            pretrained_weights = torch.load(args.weights, map_location=torch.device('cpu'))
 
         # Update the model weights
         model.load_state_dict(pretrained_weights)
