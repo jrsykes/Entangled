@@ -7,10 +7,9 @@ import argparse
 import sys
 import yaml
 import os
-import json
 import wandb
 import pprint
-
+import pickle
 
 parser = argparse.ArgumentParser('encoder decoder examiner')
 parser.add_argument('--model_name', type=str, default='test',
@@ -88,6 +87,7 @@ print(args)
 sys.path.append(os.path.join(os.getcwd(), 'CocoaReader/utils'))
 import toolbox
 from training_loop import train_model
+from collections import OrderedDict
 
 def train():
 
@@ -101,23 +101,34 @@ def train():
     data_dir, num_classes, initial_bias, _ = toolbox.setup(args)
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
+    
     model = toolbox.build_model(num_classes=num_classes, arch=args.arch, config=None).to(device)
 
-    if args.weights != None:
-        if torch.cuda.is_available():
-            # Load the pretrained weights from a .pkl file
-            pretrained_weights = torch.load(args.weights) 
-        else:
-            pretrained_weights = torch.load(args.weights, map_location=torch.device('cpu'))
+    if args.weights is not None:
+        print("Loading pretrained weights from: ", args.weights, "\n")
+
+        # Load the pretrained weights using pickle
+        with open(args.weights, 'rb') as f:
+            pretrained_weights = pickle.load(f)
+
+        # If CUDA is not available, map the tensors to CPU
+        if not torch.cuda.is_available():
+            pretrained_weights['model'] = {k: v.cpu() if torch.is_tensor(v) else v for k, v in pretrained_weights['model'].items()}
+
+        new_state_dict = OrderedDict()
+
+        # Loop through the original state dictionary and remove 'module.'
+        for k, v in pretrained_weights['model'].items():
+            name = k[7:]  # Remove 'module.' prefix
+            new_state_dict[name] = v
 
         # Update the model weights
-        model.load_state_dict(pretrained_weights)
+        model.load_state_dict(new_state_dict)
 
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.learning_rate,
                                             weight_decay=args.weight_decay, eps=args.eps)
 
-    image_datasets = toolbox.build_datasets(data_dir=data_dir, input_size=wandb.config['input_size']) #If images are pre compressed, use input_size=None, else use input_size=args.input_size
+    image_datasets = toolbox.build_datasets(data_dir=data_dir, input_size=args.input_size) #If images are pre compressed, use input_size=None, else use input_size=args.input_size
 
     dataloaders_dict = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=args.batch_size, shuffle=True, num_workers=6, worker_init_fn=toolbox.worker_init_fn, drop_last=False) for x in ['train', 'val']}
     
